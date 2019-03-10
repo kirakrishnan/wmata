@@ -1,0 +1,20 @@
+*.pyc
+*~
+__pycache__
+/static
+.DS_Store
+
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Django stuff:
+*.log
+db.sqlite3
+mymetro/settings_secret.py

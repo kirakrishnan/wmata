@@ -1,0 +1,55 @@
+<H1> This is the api data for capitol south and foggy bottom stations</H1>
+<table script="table-layout: fixed">
+<thead>
+    <th>car_db</th>
+    <th>destination</th>
+    <th>destinationCode</th>
+    <th>destinationName</th>
+    <th>group</th>
+    <th>line</th>
+    <th>locationCode</th>
+    <th>locationName</th>
+    <th>min</th>
+</thead>
+{% for train in latest_trains %}
+<tr>
+    <td>{{train.car_db}}</td>
+    <td>{{train.destination_db}}</td>
+    <td>{{train.destinationCode_db}}</td>
+    <td>{{train.destinationName_db}}</td>
+    <td>{{train.group_db}}</td>
+    <td>{{train.line_db}}</td>
+    <td>{{train.locationCode_db}}</td>
+    <td>{{train.locationName_db}}</td>
+    <td>{{train.min_db}}</td>
+</tr>
+{% endfor %}
+<td colspan="9">------------------------------------This is the api data for foggy bottom---------------------------</td>
+{% for train in trains_FB %}
+<tr>
+    <td>{{train.Car}}</td>
+    <td>{{train.Destination}}</td>
+    <td>{{train.DestinationCode}}</td>
+    <td>{{train.DestinationName}}</td>
+    <td>{{train.Group}}</td>
+    <td>{{train.Line}}</td>
+    <td>{{train.LocationCode}}</td>
+    <td>{{train.LocationName}}</td>
+    <td>{{train.Min}}</td>
+</tr>
+{% endfor %}
+<td colspan="9">------------------------------------This is the api data for capitol south-------------------------------</td>
+{% for train in trains_CS %}
+<tr>
+    <td>{{train.Car}}</td>
+    <td>{{train.Destination}}</td>
+    <td>{{train.DestinationCode}}</td>
+    <td>{{train.DestinationName}}</td>
+    <td>{{train.Group}}</td>
+    <td>{{train.Line}}</td>
+    <td>{{train.LocationCode}}</td>
+    <td>{{train.LocationName}}</td>
+    <td>{{train.Min}}</td>
+</tr>
+{% endfor %}
+</table>
