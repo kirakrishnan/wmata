@@ -18,3 +18,4 @@ venv.bak/
 *.log
 db.sqlite3
 mymetro/settings_secret.py
+.idea/workspace.xml
